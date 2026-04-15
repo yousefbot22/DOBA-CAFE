@@ -3,114 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dessert Menu</title>
-
-<style>
-body{
-  margin:0;
-  font-family: 'Segoe UI', sans-serif;
-  background:#0f3d36;
-  color:#fff;
-}
-
-.container{
-  max-width:1000px;
-  margin:auto;
-  padding:20px;
-}
-
-h1{
-  font-size:60px;
-  margin:10px 0;
-}
-
-h2{
-  background:#0b2c27;
-  display:inline-block;
-  padding:5px 15px;
-  border-radius:10px;
-  margin-top:20px;
-}
-
-.menu{
-  display:flex;
-  gap:40px;
-}
-
-.column{
-  flex:1;
-}
-
-.item{
-  display:flex;
-  justify-content:space-between;
-  padding:5px 0;
-  border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
-.item span{
-  color:#ccc;
-}
-
-.price{
-  color:#fff;
-}
-
-@media(max-width:768px){
-  .menu{
-    flex-direction:column;
-  }
-
-  h1{
-    font-size:40px;
-  }
-}
-</style>
+<title>DOBA CAFE</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>DESSERTS MENU</h1>
+<img src="assets/cup.svg" class="bg cup">
+<img src="assets/beans.svg" class="bg beans">
+<img src="assets/smoke.svg" class="bg smoke">
+
+<div class="title">
+<span>DOBA CAFE</span>
+<h1>COFFEE MENU</h1>
+</div>
 
 <div class="menu">
 
-<!-- LEFT -->
 <div class="column">
+<div class="section-title">مشروبات ساخنة</div>
 
-<h2>Soda</h2>
-<div class="item"><span>Pepsi</span><span class="price">25</span></div>
-<div class="item"><span>Cola</span><span class="price">25</span></div>
-<div class="item"><span>Fayrouz</span><span class="price">35</span></div>
+<div class="item">
+<span>هوت شوكليت</span>
+<span>55</span>
+</div>
 
-<h2>Yogurt</h2>
-<div class="item"><span>Classic Yogurt</span><span class="price">60</span></div>
-<div class="item"><span>Fruit Yogurt</span><span class="price">75</span></div>
-
-<h2>Additions</h2>
-<div class="item"><span>Sauce</span><span class="price">15</span></div>
-<div class="item"><span>Nuts</span><span class="price">20</span></div>
+<div class="item">
+<span>سحلب</span>
+<span>60</span>
+</div>
 
 </div>
 
-<!-- RIGHT -->
 <div class="column">
+<div class="section-title">قهوة</div>
 
-<h2>Waffle</h2>
-<div class="item"><span>Nutella</span><span class="price">65</span></div>
-<div class="item"><span>Lotus</span><span class="price">70</span></div>
+<div class="item">
+<span>قهوة تركي</span>
+<span>35</span>
+</div>
 
-<h2>Dessert</h2>
-<div class="item"><span>Cheesecake</span><span class="price">80</span></div>
-<div class="item"><span>Chocolate Cake</span><span class="price">85</span></div>
-<div class="item"><span>Molten Cake</span><span class="price">95</span></div>
-
+<div class="item">
+<span>لاتيه</span>
+<span>65</span>
 </div>
 
 </div>
 
 </div>
 
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
