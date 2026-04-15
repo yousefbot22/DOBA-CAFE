@@ -1,62 +1,252 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DOBA CAFE</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOBA CAFE • المنيو الكامل</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div class="container">
+  <!-- رسومات الخلفية -->
+  <img src="assets/cup.svg" class="bg cup" alt="">
+  <img src="assets/beans.svg" class="bg beans" alt="">
+  <img src="assets/smoke.svg" class="bg smoke" alt="">
 
-<img src="assets/cup.svg" class="bg cup">
-<img src="assets/beans.svg" class="bg beans">
-<img src="assets/smoke.svg" class="bg smoke">
+  <div class="container">
 
-<div class="title">
-<span>DOBA CAFE</span>
-<h1>COFFEE MENU</h1>
-</div>
+    <!-- العنوان الرئيسي -->
+    <div class="title">
+      <span>DOBA CAFE</span>
+      <h1>COFFEE & DESSERTS</h1>
+    </div>
 
-<div class="menu">
+    <!-- شبكة المنيو 3 أعمدة -->
+    <div class="menu-grid">
 
-<div class="column">
-<div class="section-title">مشروبات ساخنة</div>
+      <!-- العمود الأول: مشروبات ساخنة + قهوة + إسبريسو + نسكافيه -->
+      <div class="menu-col">
+        <div class="section-title">☕ مشروبات ساخنة</div>
+        <div class="item"><span>هوت سيدر</span><span>45</span></div>
+        <div class="item"><span>هوت شوكليت</span><span>55</span></div>
+        <div class="item"><span>هوت ماونتن ووتر</span><span>50</span></div>
+        <div class="item"><span>شوكولاتيه</span><span>60</span></div>
+        <div class="item"><span>هوت لوتس</span><span>65</span></div>
+        <div class="item"><span>هوت نوتيلا</span><span>65</span></div>
+        <div class="item"><span>هوت اوريو</span><span>60</span></div>
+        <div class="item"><span>سحلب مكسرات</span><span>70</span></div>
+        <div class="item"><span>سحلب فواكه</span><span>75</span></div>
+        <div class="item"><span>سحلب نكهات</span><span>70</span></div>
+        <div class="item"><span>حليب بالقرفة</span><span>40</span></div>
+        <div class="item"><span>ميلك تي</span><span>45</span></div>
 
-<div class="item">
-<span>هوت شوكليت</span>
-<span>55</span>
-</div>
+        <div class="section-title" style="margin-top: 30px;">☕ القهوة</div>
+        <div class="item"><span>قهوة تركية</span><span>35</span></div>
+        <div class="item"><span>قهوة بندق</span><span>45</span></div>
+        <div class="item"><span>قهوة فرنسية</span><span>40</span></div>
+        <div class="item"><span>قهوة نوتيلا</span><span>55</span></div>
+        <div class="item"><span>قهوة لوتس</span><span>55</span></div>
+        <div class="item"><span>قهوة فستق</span><span>60</span></div>
 
-<div class="item">
-<span>سحلب</span>
-<span>60</span>
-</div>
+        <div class="section-title" style="margin-top: 30px;">🇮🇹 إسبريسو وإيطالي</div>
+        <div class="item"><span>اسبريسو سنجل</span><span>30</span></div>
+        <div class="item"><span>اسبريسو دبل</span><span>40</span></div>
+        <div class="item"><span>اسبريسو أفوكادو</span><span>55</span></div>
+        <div class="item"><span>قهوة أمريكية</span><span>40</span></div>
+        <div class="item"><span>لاتيه</span><span>50</span></div>
+        <div class="item"><span>لاتيه بنكهة</span><span>55</span></div>
+        <div class="item"><span>كابتشينو</span><span>50</span></div>
+        <div class="item"><span>كابتشينو بنكهة</span><span>55</span></div>
+        <div class="item"><span>موكا</span><span>55</span></div>
+        <div class="item"><span>دارك موكا</span><span>60</span></div>
+        <div class="item"><span>كورنادو</span><span>55</span></div>
+        <div class="item"><span>فلات وايت</span><span>55</span></div>
+        <div class="item"><span>ميكاتو</span><span>50</span></div>
 
-</div>
+        <div class="section-title" style="margin-top: 30px;">☕ نسكافيه</div>
+        <div class="item"><span>نسكافيه بلاك</span><span>35</span></div>
+        <div class="item"><span>نسكافيه حليب</span><span>45</span></div>
+        <div class="item"><span>نسكافيه نكهة</span><span>50</span></div>
+        <div class="item flavor-note"><span>كراميل - بندق - فانيلا</span></div>
+        <div class="item flavor-note"><span>كوكيز - شوكولاتة</span></div>
+      </div>
 
-<div class="column">
-<div class="section-title">قهوة</div>
+      <!-- العمود الثاني: شاي + أعشاب + مخبوزات + آيس كريم -->
+      <div class="menu-col">
+        <div class="section-title">🍵 الشاي</div>
+        <div class="item"><span>شاي عربي</span><span>30</span></div>
+        <div class="item"><span>تي باج</span><span>25</span></div>
+        <div class="item"><span>شاي أخضر</span><span>30</span></div>
+        <div class="item"><span>شاي بنكهة</span><span>35</span></div>
+        <div class="item"><span>كرك</span><span>40</span></div>
 
-<div class="item">
-<span>قهوة تركي</span>
-<span>35</span>
-</div>
+        <div class="section-title" style="margin-top: 30px;">🌿 أعشاب</div>
+        <div class="item"><span>يانسون</span><span>30</span></div>
+        <div class="item"><span>قرفة</span><span>30</span></div>
+        <div class="item"><span>زنجبيل</span><span>35</span></div>
+        <div class="item"><span>نعناع</span><span>25</span></div>
+        <div class="item"><span>ليمون</span><span>25</span></div>
+        <div class="item"><span>كركديه</span><span>35</span></div>
+        <div class="item"><span>أعشاب مشكلة</span><span>40</span></div>
 
-<div class="item">
-<span>لاتيه</span>
-<span>65</span>
-</div>
+        <div class="section-title" style="margin-top: 30px;">🥐 مخبوزات وآيس كريم</div>
+        <div class="sub-title">🍦 آيس كريم سوفت</div>
+        <div class="item"><span>كونو</span><span>30</span></div>
+        <div class="item"><span>طبق آيس كريم</span><span>40</span></div>
+        <div class="item"><span>تيك أواي صغير</span><span>35</span></div>
+        <div class="item"><span>تيك أواي كبير</span><span>50</span></div>
 
-</div>
+        <div class="sub-title" style="margin-top: 18px;">🍨 آيس كريم هارد</div>
+        <div class="item"><span>باولا 1</span><span>35</span></div>
+        <div class="item"><span>باولا 2</span><span>35</span></div>
+        <div class="item"><span>باولا 3</span><span>35</span></div>
+        <div class="item"><span>باولا 4</span><span>35</span></div>
+        <div class="item"><span>آيس كريم فواكه</span><span>45</span></div>
+        <div class="item"><span>آيس كريم فواكه بالمكسرات</span><span>55</span></div>
 
-</div>
+        <div class="sub-title" style="margin-top: 18px;">🥐 كرواسون</div>
+        <div class="item"><span>كرواسون سادة</span><span>55</span></div>
+        <div class="item"><span>كرواسون جبنة</span><span>65</span></div>
+      </div>
 
-</div>
+      <!-- العمود الثالث: حلويات + وافل + صودا + زبادي + إضافات -->
+      <div class="menu-col">
+        <div class="section-title">🥤 صودا</div>
+        <div class="item"><span>بيبسي</span><span>25</span></div>
+        <div class="item"><span>كولا</span><span>25</span></div>
+        <div class="item"><span>فيروز</span><span>35</span></div>
+        <div class="item"><span>سفن أب</span><span>25</span></div>
+        <div class="item"><span>ميرندا</span><span>25</span></div>
+        <div class="item"><span>تويست</span><span>20</span></div>
+        <div class="item"><span>ستينج</span><span>20</span></div>
+        <div class="item"><span>بريل</span><span>35</span></div>
+        <div class="item"><span>ريد بول</span><span>100</span></div>
+        <div class="item"><span>مياه صغيرة</span><span>10</span></div>
 
-<script src="script.js"></script>
+        <div class="section-title" style="margin-top: 30px;">🥄 زبادي</div>
+        <div class="item"><span>زبادي كلاسيك</span><span>60</span></div>
+        <div class="item"><span>زبادي فواكه</span><span>75</span></div>
+        <div class="item"><span>زبادي أفوكادو</span><span>100</span></div>
+        <div class="item"><span>زبادي زاهر</span><span>120</span></div>
+
+        <div class="section-title" style="margin-top: 30px;">➕ إضافات</div>
+        <div class="item"><span>صوص</span><span>15</span></div>
+        <div class="item"><span>مكسرات</span><span>20</span></div>
+        <div class="item"><span>عسل</span><span>20</span></div>
+        <div class="item"><span>حليب</span><span>20</span></div>
+        <div class="item"><span>آيس كريم</span><span>30</span></div>
+        <div class="item"><span>فواكه</span><span>20</span></div>
+        <div class="item"><span>سيرب</span><span>10</span></div>
+        <div class="item"><span>ثلج</span><span>10</span></div>
+
+        <div class="section-title" style="margin-top: 30px;">🧇 وافل</div>
+        <div class="item"><span>نوتيلا</span><span>65</span></div>
+        <div class="item"><span>لوتس</span><span>70</span></div>
+        <div class="item"><span>وايت شوكليت</span><span>60</span></div>
+        <div class="item"><span>دارك شوكليت</span><span>60</span></div>
+        <div class="item"><span>كيندر</span><span>90</span></div>
+        <div class="item"><span>أوريو</span><span>70</span></div>
+        <div class="item"><span>فستق</span><span>80</span></div>
+        <div class="item"><span>فواكه</span><span>80</span></div>
+        <div class="item"><span>آيس كريم</span><span>85</span></div>
+
+        <div class="section-title" style="margin-top: 30px;">🍰 حلويات</div>
+        <div class="item"><span>تشيز كيك</span><span>80</span></div>
+        <div class="item"><span>كيكة شوكولاتة</span><span>80</span></div>
+        <div class="item"><span>ديسبيكادو</span><span>100</span></div>
+        <div class="item"><span>مولتن كيك</span><span>95</span></div>
+        <div class="item"><span>ريد فيلفيت</span><span>80</span></div>
+        <div class="item"><span>تيراميسو</span><span>80</span></div>
+        <div class="item"><span>سلطة فواكه</span><span>65</span></div>
+        <div class="item"><span>سلطة فواكه مع ثلج</span><span>80</span></div>
+        <div class="item"><span>سكوب كريم 1</span><span>80</span></div>
+        <div class="item"><span>فواكه + 2 سكوب</span><span>85</span></div>
+        <div class="item"><span>كريم 2 سكوب</span><span>90</span></div>
+        <div class="item"><span>فواكه + 3 سكوب</span><span>95</span></div>
+        <div class="item"><span>كريم 3 سكوب</span><span>95</span></div>
+        <div class="item"><span>سلطة فواكه مكس</span><span>95</span></div>
+      </div>
+
+      <!-- صف إضافي لقائمة الفرابيه والعصائر والميلك شيك (عرض 3 أعمدة في شبكة جديدة) -->
+    </div>
+
+    <!-- القسم الثاني: فرابيه، موكتيل، آيسد، عصائر، ميلك شيك -->
+    <div class="menu-grid" style="margin-top: 32px;">
+      <div class="menu-col">
+        <div class="section-title">🥤 فرابيه</div>
+        <div class="item"><span>موكا فرابيه</span><span>55</span></div>
+        <div class="item"><span>نوتيلا فرابيه</span><span>60</span></div>
+        <div class="item"><span>فستق فرابيه</span><span>65</span></div>
+        <div class="item"><span>لاتيه فرابيه</span><span>55</span></div>
+
+        <div class="section-title" style="margin-top: 30px;">🍹 موكتيل</div>
+        <div class="item"><span>موهيتو</span><span>45</span></div>
+        <div class="item"><span>موهيتو نكهات</span><span>50</span></div>
+        <div class="item"><span>سن شاين</span><span>50</span></div>
+        <div class="item"><span>سن رايز</span><span>50</span></div>
+        <div class="item"><span>شيري كولا</span><span>45</span></div>
+        <div class="item"><span>بينا كولادا</span><span>55</span></div>
+        <div class="item"><span>بلو بيري</span><span>50</span></div>
+        <div class="item"><span>بلو باج</span><span>50</span></div>
+        <div class="item"><span>هيد هامر</span><span>55</span></div>
+      </div>
+
+      <div class="menu-col">
+        <div class="section-title">🧊 آيسد قهوة</div>
+        <div class="item"><span>آيسد كوفي</span><span>45</span></div>
+        <div class="item"><span>آيسد لاتيه</span><span>50</span></div>
+        <div class="item"><span>آيسد سبانش لاتيه</span><span>55</span></div>
+        <div class="item"><span>آيسد موكا</span><span>55</span></div>
+        <div class="item"><span>آيسد أمريكانو</span><span>40</span></div>
+        <div class="item"><span>آيسد كراميل</span><span>50</span></div>
+        <div class="item"><span>آيسد ميكاتو</span><span>50</span></div>
+
+        <div class="section-title" style="margin-top: 30px;">🧃 عصائر</div>
+        <div class="item"><span>مانجو</span><span>40</span></div>
+        <div class="item"><span>فراولة</span><span>40</span></div>
+        <div class="item"><span>برتقال</span><span>35</span></div>
+        <div class="item"><span>كيوي</span><span>45</span></div>
+        <div class="item"><span>بطيخ</span><span>35</span></div>
+        <div class="item"><span>شمام</span><span>40</span></div>
+        <div class="item"><span>أفوكادو بالمكسرات</span><span>65</span></div>
+        <div class="item"><span>تمر بالحليب</span><span>50</span></div>
+        <div class="item"><span>موز</span><span>35</span></div>
+        <div class="item"><span>ليمون</span><span>25</span></div>
+        <div class="item"><span>ليمون نعناع</span><span>30</span></div>
+      </div>
+
+      <div class="menu-col">
+        <div class="section-title">🥛 ميلك شيك</div>
+        <div class="item"><span>فانيلا</span><span>45</span></div>
+        <div class="item"><span>شوكولاتة</span><span>45</span></div>
+        <div class="item"><span>مانجو</span><span>50</span></div>
+        <div class="item"><span>فراولة</span><span>50</span></div>
+        <div class="item"><span>كراميل</span><span>50</span></div>
+        <div class="item"><span>نوتيلا</span><span>55</span></div>
+        <div class="item"><span>لوتس</span><span>55</span></div>
+        <div class="item"><span>أوريو</span><span>55</span></div>
+        <div class="item"><span>كت كات</span><span>55</span></div>
+        <div class="item"><span>سنيكرز</span><span>60</span></div>
+        <div class="item"><span>هوهوز</span><span>55</span></div>
+        <div class="item"><span>فستق</span><span>60</span></div>
+        <div class="item"><span>توينكيز</span><span>55</span></div>
+        <div class="item"><span>زاهر</span><span>65</span></div>
+
+        <div class="section-title" style="margin-top: 30px;">☕ فرابتشينو</div>
+        <div class="item"><span>كوفي فرابتشينو</span><span>55</span></div>
+        <div class="item"><span>لوتس فرابتشينو</span><span>60</span></div>
+        <div class="item"><span>موكا فرابتشينو</span><span>60</span></div>
+        <div class="item"><span>كراميل فرابتشينو</span><span>60</span></div>
+      </div>
+    </div>
+
+    <!-- تذييل بسيط (مثل الصور) -->
+    <div class="footer-note">
+      <span>🍫 سياسة الخصوصية  •  الشروط والدعم  •  DOBA CAFE</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
