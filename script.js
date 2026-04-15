@@ -1,8 +1,8 @@
-// script.js — تأثيرات خفيفة + تحميل بصري
+// script.js — تأثيرات خفيفة
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('☕ DOBA CAFE • منيو غامق أنيق');
+  console.log('☕ DOBA CAFE • منيو بألوان دافئة');
 
-  // إضافة تأثير ظهور تدريجي للأعمدة
+  // ظهور تدريجي للأعمدة
   const cols = document.querySelectorAll('.menu-col');
   cols.forEach((col, idx) => {
     col.style.opacity = '0';
@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, idx * 60);
   });
 
-  // إبراز العناصر عند التمرير (إضافة كلاس بسيط)
+  // تأثير hover على العناصر
   const items = document.querySelectorAll('.item');
   items.forEach(item => {
     item.addEventListener('mouseenter', () => {
-      item.style.backgroundColor = 'rgba(70, 50, 35, 0.25)';
+      item.style.backgroundColor = 'rgba(140, 100, 70, 0.15)';
       item.style.borderRadius = '20px';
       item.style.transition = '0.2s';
     });
