@@ -1,79 +1,182 @@
-body{
-  margin:0;
-  font-family:'Cairo', sans-serif;
-  background:#0e2f2b;
-  color:#fff;
+/* style.css — تصميم DOBA CAFE غامق وأنيق */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:30px;
-  position:relative;
+body {
+  background: #0c0a0a;
+  font-family: 'Cairo', sans-serif;
+  color: #f0e7db;
+  padding: 20px 16px 40px;
+  min-height: 100vh;
+  position: relative;
+  line-height: 1.5;
+  direction: rtl;
 }
 
-.bg{
-  position:absolute;
-  opacity:0.1;
+/* عناصر الخلفية */
+.bg {
+  position: fixed;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+  filter: brightness(0.8);
 }
 
-.cup{
-  right:50px;
-  top:50px;
-  width:120px;
+.cup {
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+  transform: rotate(-12deg);
 }
 
-.beans{
-  right:0;
-  top:0;
-  width:150px;
+.beans {
+  top: 30px;
+  right: 30px;
+  width: 260px;
+  opacity: 0.06;
 }
 
-.smoke{
-  left:0;
-  top:40px;
-  width:80px;
+.smoke {
+  bottom: 60px;
+  right: 60px;
+  width: 380px;
+  opacity: 0.04;
+  transform: scaleX(-1);
 }
 
-.title span{
-  opacity:0.7;
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
-.title h1{
-  font-size:60px;
-  margin:10px 0;
+/* العنوان */
+.title {
+  text-align: center;
+  margin-bottom: 48px;
 }
 
-.menu{
-  display:flex;
-  gap:40px;
+.title span {
+  display: block;
+  font-size: 1.9rem;
+  letter-spacing: 12px;
+  font-weight: 300;
+  color: #c7aa8b;
+  text-transform: uppercase;
 }
 
-.column{
-  flex:1;
+.title h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #e5d5c0;
+  text-shadow: 0 0 12px rgba(190, 150, 100, 0.4);
+  margin-top: -10px;
+  border-bottom: 2px solid #6a5340;
+  display: inline-block;
+  padding: 0 30px 18px;
+  letter-spacing: 6px;
 }
 
-.section-title{
-  background:#0a2522;
-  display:inline-block;
-  padding:5px 15px;
-  border-radius:10px;
-  margin:20px 0;
+/* شبكة الأعمدة */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 32px;
+  align-items: start;
 }
 
-.item{
-  display:flex;
-  justify-content:space-between;
-  border-bottom:1px solid rgba(255,255,255,0.1);
-  padding:5px 0;
+.menu-col {
+  background: rgba(16, 12, 10, 0.7);
+  backdrop-filter: blur(4px);
+  padding: 26px 20px;
+  border-radius: 36px;
+  border: 1px solid #4a3c2e;
+  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.8);
+  transition: all 0.2s;
 }
 
-@media(max-width:768px){
-  .menu{
-    flex-direction:column;
+/* عنوان القسم */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #dac2a8;
+  border-right: 6px solid #a5835e;
+  padding-right: 20px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #c1aa92;
+  margin: 20px 0 12px 0;
+  border-bottom: 1px dashed #5e4e3b;
+  padding-bottom: 6px;
+}
+
+/* صف المنتج */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 9px 6px;
+  border-bottom: 1px dotted #4f3f2e;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #f2e3d2;
+}
+
+.item span:first-child {
+  font-weight: 500;
+}
+
+.item span:last-child {
+  font-weight: 700;
+  color: #dbbc9b;
+  background: #1f1813;
+  padding: 2px 14px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  border: 1px solid #6e5b47;
+}
+
+.flavor-note span:first-child {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #bfa58b;
+  padding-right: 20px;
+}
+
+.flavor-note span:last-child {
+  display: none;
+}
+
+/* تذييل */
+.footer-note {
+  margin-top: 50px;
+  text-align: center;
+  color: #9e8b78;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  border-top: 1px solid #3f3123;
+  padding-top: 28px;
+}
+
+/* تجاوب */
+@media (max-width: 1000px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+  .title h1 { font-size: 3rem; }
+}
 
-  .title h1{
-    font-size:40px;
+@media (max-width: 650px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
   }
 }
