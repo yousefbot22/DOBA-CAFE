@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>DOBA CAFE | مشروبات باردة</title>
+    <title>DOBA CAFE | مشروبات غازية</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -30,7 +30,7 @@
             color: transparent;
         }
         .logo span { font-size: 32px; color: #b87c4f; background: none; }
-        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links { display: flex; gap: 30px; list-style: none; flex-wrap: wrap; }
         .nav-links a { text-decoration: none; font-weight: 600; color: #3e2c21; transition: 0.3s; }
         .nav-links a:hover { color: #b87c4f; }
         .menu-icon { display: none; font-size: 28px; cursor: pointer; }
@@ -95,10 +95,10 @@
         <div class="logo"><span>☕</span> DOBA CAFE</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="hot-drinks.html">☕ مشروبات ساخنة</a></li>
-            <li><a href="milk-shake.html">🥛 ميلك شيك</a></li>
-            <li><a href="cold-drinks.html">🧊 مشروبات باردة</a></li>
-            <li><a href="juice.html">🧃 عصائر</a></li>
+            <li><a href="soda.html">🥤 مشروبات غازية</a></li>
+            <li><a href="yogurt.html">🥤 زبادي</a></li>
+            <li><a href="additions.html">➕ إضافات</a></li>
+            <li><a href="waffle.html">🧇 وافل</a></li>
             <li><a href="dessert.html">🍰 حلويات</a></li>
         </ul>
         <div class="menu-icon" id="menuIcon">
@@ -107,41 +107,27 @@
     </nav>
 
     <div class="page-header">
-        <h1>🧊 المشروبات الباردة</h1>
-        <p>فرابيه - موكتيل - ايس كوفي</p>
+        <h1>🥤 المشروبات الغازية</h1>
+        <p>مشروبات منعشة بأسعار مميزة</p>
     </div>
 
     <div class="menu-container">
-        <div class="menu-item"><span class="item-name">موكا فرابيه</span><span class="item-price">50 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">نوتيلا فرابيه</span><span class="item-price">55 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">فستق فرابيه</span><span class="item-price">55 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">لاتيه فرابيه</span><span class="item-price">50 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">موجيتو</span><span class="item-price">40 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">موجيتو فليفر</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">سانشاين</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">سانرايز</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">شيري كولا</span><span class="item-price">40 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">بينا كولادا</span><span class="item-price">50 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">بلوبيري</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">بلوباج</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">هيد هامر</span><span class="item-price">50 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">ايس كوفي</span><span class="item-price">40 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">ايس لاتيه</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">ايس سبانش لاتيه</span><span class="item-price">50 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">ايس موكا</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">ايس امريكانو</span><span class="item-price">35 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">ايس كراميل</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">ايس ماتشياتو</span><span class="item-price">45 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">فرابتشينو قهوة</span><span class="item-price">55 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">فرابتشينو لوتس</span><span class="item-price">60 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">فرابتشينو موكا</span><span class="item-price">55 جنيه</span></div>
-        <div class="menu-item"><span class="item-name">فرابتشينو كراميل</span><span class="item-price">55 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">بيبسي</span><span class="item-price">25 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">كولا</span><span class="item-price">25 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">فيروز</span><span class="item-price">35 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">سفن أب</span><span class="item-price">25 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">ميرندا</span><span class="item-price">25 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">تويسنت</span><span class="item-price">20 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">ستينغ</span><span class="item-price">20 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">بريل</span><span class="item-price">35 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">ريد بول</span><span class="item-price">100 جنيه</span></div>
+        <div class="menu-item"><span class="item-name">مياه صغيرة</span><span class="item-price">10 جنيه</span></div>
     </div>
 
     <a href="index.html" class="back-home"><i class="fas fa-home"></i></a>
 
     <footer>
-        <p>&copy; 2026 DOBA CAFE | دوبا كافـيـه</p>
+        <p>&copy; 2026 DOBA CAFE | دوبا كافيه</p>
     </footer>
 
     <script>
