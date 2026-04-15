@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Cairo', sans-serif;
-    background-color: #f5f7f5;
-    color: #1a2a3a;
+    background-color: #fefaf5;
+    color: #2c2420;
     scroll-behavior: smooth;
 }
 
@@ -15,22 +15,11 @@ body {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #e0e8e0;
+    background: #f1e6dc;
 }
 ::-webkit-scrollbar-thumb {
-    background: #2c553c;
+    background: #c7a17a;
     border-radius: 10px;
-}
-
-/* اللون الجديد */
-:root {
-    --primary: #2c553c;
-    --primary-dark: #1e3d2c;
-    --primary-light: #4a7c5e;
-    --bg-light: #f0f4f0;
-    --text-dark: #1a2a3a;
-    --text-light: #5a6e6a;
-    --border-color: #d4e0d4;
 }
 
 .navbar {
@@ -38,26 +27,26 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 251, 245, 0.95);
     backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #f0e2d4;
 }
 
 .logo {
     font-size: 28px;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    background: linear-gradient(135deg, #b87c4f, #e0a87c);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 .logo span {
     font-size: 32px;
-    color: var(--primary);
+    color: #b87c4f;
     background: none;
 }
 
@@ -69,12 +58,12 @@ body {
 .nav-links a {
     text-decoration: none;
     font-weight: 600;
-    color: var(--text-dark);
+    color: #3e2c21;
     transition: 0.3s;
     font-size: 18px;
 }
 .nav-links a:hover {
-    color: var(--primary);
+    color: #b87c4f;
     transform: translateY(-2px);
 }
 
@@ -82,12 +71,12 @@ body {
     display: none;
     font-size: 28px;
     cursor: pointer;
-    color: var(--primary);
+    color: #5c3f2b;
 }
 
 .btn {
     display: inline-block;
-    background: var(--primary);
+    background: #b87c4f;
     color: white;
     padding: 12px 32px;
     border-radius: 40px;
@@ -96,16 +85,16 @@ body {
     transition: 0.3s;
     border: none;
     cursor: pointer;
-    box-shadow: 0 5px 12px rgba(44,85,60,0.3);
+    box-shadow: 0 5px 12px rgba(184,124,79,0.3);
 }
 .btn:hover {
-    background: var(--primary-dark);
+    background: #9b623b;
     transform: scale(1.02);
 }
 
 .hero {
     min-height: 90vh;
-    background: linear-gradient(100deg, #f5f7f5 0%, #edf2ed 100%);
+    background: linear-gradient(100deg, #fcf5ed 0%, #f9efdf 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -121,7 +110,7 @@ body {
     font-size: 54px;
     font-weight: 800;
     line-height: 1.2;
-    background: linear-gradient(145deg, #1a2a3a, var(--primary));
+    background: linear-gradient(145deg, #4f2f1c, #b87c4f);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -129,7 +118,7 @@ body {
 .hero-content p {
     font-size: 20px;
     margin: 20px 0;
-    color: var(--text-light);
+    color: #5f4a38;
     font-weight: 400;
 }
 .hero-img {
@@ -155,7 +144,7 @@ body {
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 20px;
-    color: var(--text-dark);
+    color: #2c1d12;
     position: relative;
     display: inline-block;
 }
@@ -163,7 +152,7 @@ body {
     content: '';
     width: 70px;
     height: 4px;
-    background: var(--primary);
+    background: #e0a87c;
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -171,50 +160,10 @@ body {
     border-radius: 4px;
 }
 .section-sub {
-    color: var(--text-light);
+    color: #8b694c;
     max-width: 650px;
     margin: 20px auto 50px;
     font-size: 18px;
-}
-
-.cards-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px;
-    margin-top: 20px;
-}
-.card {
-    background: white;
-    border-radius: 36px;
-    width: 280px;
-    padding: 28px 20px 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-    border: 1px solid var(--border-color);
-}
-.card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 25px 40px rgba(0,0,0,0.1);
-    border-color: var(--primary-light);
-}
-.card-icon {
-    font-size: 55px;
-    color: var(--primary);
-    margin-bottom: 20px;
-}
-.card h3 {
-    font-size: 26px;
-    margin-bottom: 12px;
-}
-.card p {
-    color: var(--text-light);
-    margin-bottom: 20px;
-}
-.price {
-    font-weight: 800;
-    color: var(--primary);
-    font-size: 22px;
 }
 
 .gallery {
@@ -245,12 +194,10 @@ body {
     flex-wrap: wrap;
     gap: 50px;
     justify-content: space-between;
-    background: white;
+    background: #fff7f0;
     border-radius: 60px;
     padding: 50px;
     margin-top: 30px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
-    border: 1px solid var(--border-color);
 }
 .contact-info {
     flex: 1;
@@ -258,7 +205,7 @@ body {
 }
 .contact-info i {
     font-size: 26px;
-    color: var(--primary);
+    color: #b87c4f;
     margin-left: 15px;
 }
 .contact-info p {
@@ -275,7 +222,7 @@ body {
     width: 100%;
     padding: 14px 20px;
     margin-bottom: 18px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e9dacf;
     border-radius: 50px;
     font-family: 'Cairo', sans-serif;
     background: white;
@@ -287,26 +234,26 @@ body {
 }
 .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(44,85,60,0.2);
+    border-color: #b87c4f;
+    box-shadow: 0 0 0 3px rgba(184,124,79,0.2);
 }
 
 footer {
-    background: var(--text-dark);
-    color: var(--bg-light);
+    background: #1f160f;
+    color: #e4cfbc;
     text-align: center;
     padding: 35px;
     margin-top: 40px;
 }
 .social-icons a {
-    color: var(--bg-light);
+    color: #e4cfbc;
     margin: 0 12px;
     font-size: 26px;
     transition: 0.2s;
     display: inline-block;
 }
 .social-icons a:hover {
-    color: var(--primary-light);
+    color: #e0a87c;
     transform: translateY(-5px);
 }
 
@@ -319,7 +266,7 @@ footer {
         top: 70px;
         right: -100%;
         flex-direction: column;
-        background: white;
+        background: #fffaf3;
         width: 70%;
         height: calc(100vh - 70px);
         padding: 40px 30px;
