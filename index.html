@@ -1,97 +1,116 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>DOBA CAFE | دوبا كافيه</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dessert Menu</title>
+
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:#0f3d36;
+  color:#fff;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+
+h1{
+  font-size:60px;
+  margin:10px 0;
+}
+
+h2{
+  background:#0b2c27;
+  display:inline-block;
+  padding:5px 15px;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+.menu{
+  display:flex;
+  gap:40px;
+}
+
+.column{
+  flex:1;
+}
+
+.item{
+  display:flex;
+  justify-content:space-between;
+  padding:5px 0;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.item span{
+  color:#ccc;
+}
+
+.price{
+  color:#fff;
+}
+
+@media(max-width:768px){
+  .menu{
+    flex-direction:column;
+  }
+
+  h1{
+    font-size:40px;
+  }
+}
+</style>
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <div class="logo"><span>☕</span> DOBA CAFE</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="soda.html">🥤 مشروبات غازية</a></li>
-            <li><a href="yogurt.html">🥤 زبادي</a></li>
-            <li><a href="additions.html">➕ إضافات</a></li>
-            <li><a href="waffle.html">🧇 وافل</a></li>
-            <li><a href="dessert.html">🍰 حلويات</a></li>
-            <li><a href="#gallery">المعرض</a></li>
-            <li><a href="#contact">تواصل معانا</a></li>
-        </ul>
-        <div class="menu-icon" id="menuIcon">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
+<div class="container">
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>DOBA<br>حيث القهوة<br>بأصلها المصري</h1>
-            <p>تعالوا نعيش سوا أجمل الأوقات على قهوة ونسكافيه .. قهوتنا أصيلة، وحكاياتنا لذيذة. مستنى إيه؟ تعالى نشرب قهوة!</p>
-            <a href="soda.html" class="btn">📋 شوف المنيو الكامل <i class="fas fa-arrow-left"></i></a>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format" alt="قهوة دوبا">
-        </div>
-    </section>
+<h1>DESSERTS MENU</h1>
 
-    <section id="gallery" class="section" style="background: #fef8f2;">
-        <h2 class="section-title">صور من جوة DOBA</h2>
-        <p class="section-sub">شوف الأجواء والأصحاب والقهوة الحلوة</p>
-        <div class="gallery">
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&auto=format" alt="تحضير قهوة"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format" alt="كابتشينو فني"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&auto=format" alt="ديكور المقهى"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&auto=format" alt="حلويات"></div>
-        </div>
-    </section>
+<div class="menu">
 
-    <section id="contact" class="section">
-        <h2 class="section-title">تعالى زورنا أو ابعت رسالة</h2>
-        <p class="section-sub">نفسك في قهوة ولا حجز؟ يبقى تكلمنا واحنا تحت أمرك</p>
-        <div class="contact-flex">
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> منتصف شارع المستوصف - برج هشام</p>
-                <p><i class="fas fa-phone-alt"></i> 01031363267</p>
-                <p><i class="fas fa-clock"></i> يومياً من 10 الصبح لحد 12 بالليل</p>
-                <p><i class="fas fa-instagram"></i> @doba.cafe_eg</p>
-            </div>
-            <div class="contact-form">
-                <form action="#" method="post">
-                    <input type="text" placeholder="اسمك يا باشا" required>
-                    <input type="email" placeholder="ايميلك" required>
-                    <textarea rows="3" placeholder="اكتبلنا رسالة ..."></textarea>
-                    <button type="submit" class="btn">أبعت <i class="fas fa-paper-plane"></i></button>
-                </form>
-            </div>
-        </div>
-    </section>
+<!-- LEFT -->
+<div class="column">
 
-    <footer>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-        </div>
-        <p style="margin-top: 25px;">&copy; 2026 DOBA CAFE | دوبا كافيه</p>
-    </footer>
+<h2>Soda</h2>
+<div class="item"><span>Pepsi</span><span class="price">25</span></div>
+<div class="item"><span>Cola</span><span class="price">25</span></div>
+<div class="item"><span>Fayrouz</span><span class="price">35</span></div>
 
-    <script>
-        const menuIcon = document.getElementById('menuIcon');
-        const navLinks = document.getElementById('navLinks');
+<h2>Yogurt</h2>
+<div class="item"><span>Classic Yogurt</span><span class="price">60</span></div>
+<div class="item"><span>Fruit Yogurt</span><span class="price">75</span></div>
 
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+<h2>Additions</h2>
+<div class="item"><span>Sauce</span><span class="price">15</span></div>
+<div class="item"><span>Nuts</span><span class="price">20</span></div>
 
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+</div>
+
+<!-- RIGHT -->
+<div class="column">
+
+<h2>Waffle</h2>
+<div class="item"><span>Nutella</span><span class="price">65</span></div>
+<div class="item"><span>Lotus</span><span class="price">70</span></div>
+
+<h2>Dessert</h2>
+<div class="item"><span>Cheesecake</span><span class="price">80</span></div>
+<div class="item"><span>Chocolate Cake</span><span class="price">85</span></div>
+<div class="item"><span>Molten Cake</span><span class="price">95</span></div>
+
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>
