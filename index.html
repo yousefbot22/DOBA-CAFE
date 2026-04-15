@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title> DOBA CAFE | دوبا كافـيـه </title>
+    <title>DOBA CAFE | دوبا كافيه</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -13,9 +13,12 @@
     <nav class="navbar">
         <div class="logo"><span>☕</span> DOBA CAFE</div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#menu">المنيو</a></li>
-            <li><a href="menu.html">📋 المنيو الكامل</a></li>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="soda.html">🥤 مشروبات غازية</a></li>
+            <li><a href="yogurt.html">🥤 زبادي</a></li>
+            <li><a href="additions.html">➕ إضافات</a></li>
+            <li><a href="waffle.html">🧇 وافل</a></li>
+            <li><a href="dessert.html">🍰 حلويات</a></li>
             <li><a href="#gallery">المعرض</a></li>
             <li><a href="#contact">تواصل معانا</a></li>
         </ul>
@@ -28,48 +31,14 @@
         <div class="hero-content">
             <h1>DOBA<br>حيث القهوة<br>بأصلها المصري</h1>
             <p>تعالوا نعيش سوا أجمل الأوقات على قهوة ونسكافيه .. قهوتنا أصيلة، وحكاياتنا لذيذة. مستنى إيه؟ تعالى نشرب قهوة!</p>
-            <a href="menu.html" class="btn">📋 شوف المنيو الكامل <i class="fas fa-arrow-left"></i></a>
+            <a href="soda.html" class="btn">📋 شوف المنيو الكامل <i class="fas fa-arrow-left"></i></a>
         </div>
         <div class="hero-img">
             <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format" alt="قهوة دوبا">
         </div>
     </section>
 
-    <section id="menu" class="section">
-        <h2 class="section-title">أشهى حاجة عندنا</h2>
-        <p class="section-sub">اختار اللي يعجبك واحنا نجهزهولك</p>
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-mug-hot"></i></div>
-                <h3>قهوة تركي</h3>
-                <p>على أصولها، بنطحنها قدامك وبنفورها بالهنا</p>
-                <div class="price">25 جنيه</div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-wind"></i></div>
-                <h3>نسكافيه بالحليب</h3>
-                <p>زي ما بتحبه، ناعم وبياخد الروقان</p>
-                <div class="price">30 جنيه</div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-moon"></i></div>
-                <h3>لاتيه بالكراميل</h3>
-                <p>لما تحب تتدلع، كراميل وقهوة مع بعض</p>
-                <div class="price">35 جنيه</div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-cookie-bite"></i></div>
-                <h3>كنافة بالجبنة</h3>
-                <p>حلويات مصرية أصيلة، صحبة القهوة تحفة</p>
-                <div class="price">40 جنيه</div>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="menu.html" class="btn" style="background: #2c553c; font-size: 18px;">📋 استكشف كل المنيو <i class="fas fa-arrow-left"></i></a>
-        </div>
-    </section>
-
-    <section id="gallery" class="section" style="background: #f0f4f0;">
+    <section id="gallery" class="section" style="background: #fef8f2;">
         <h2 class="section-title">صور من جوة DOBA</h2>
         <p class="section-sub">شوف الأجواء والأصحاب والقهوة الحلوة</p>
         <div class="gallery">
@@ -107,7 +76,7 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-tiktok"></i></a>
         </div>
-        <p style="margin-top: 25px;">&copy; 2026 DOBA CAFE | دوبا كافـيـه</p>
+        <p style="margin-top: 25px;">&copy; 2026 DOBA CAFE | دوبا كافيه</p>
     </footer>
 
     <script>
@@ -121,18 +90,6 @@
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
-            });
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId === "#") return;
-                const target = document.querySelector(targetId);
-                if(target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
             });
         });
     </script>
