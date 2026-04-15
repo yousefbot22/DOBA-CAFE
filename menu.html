@@ -73,43 +73,32 @@
             text-decoration: none;
             font-weight: 700;
             transition: 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: #9b623b;
         }
 
         .menu-header {
             background: linear-gradient(135deg, #b87c4f, #e0a87c);
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
         .menu-header h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .menu-header p {
-            font-size: 18px;
-            opacity: 0.9;
+            font-size: 42px;
+            margin-bottom: 10px;
         }
 
         .menu-stats {
             text-align: center;
             background: #fef8f2;
-            padding: 15px;
-            margin: 20px 5%;
-            border-radius: 60px;
+            padding: 12px;
+            margin: 15px 5%;
+            border-radius: 50px;
         }
 
         .menu-stats span {
             font-weight: bold;
             color: #b87c4f;
-            font-size: 24px;
+            font-size: 22px;
         }
 
         .categories-bar {
@@ -117,23 +106,23 @@
             top: 70px;
             background: white;
             z-index: 99;
-            padding: 15px 5%;
+            padding: 12px 5%;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
             justify-content: center;
         }
 
         .category-link {
             background: #f0e2d4;
             color: #b87c4f;
-            padding: 8px 20px;
+            padding: 6px 18px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             transition: 0.3s;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .category-link:hover {
@@ -142,94 +131,92 @@
         }
 
         .menu-section {
-            padding: 40px 5%;
+            padding: 35px 5%;
         }
 
         .section-title {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 800;
             color: #2c1d12;
-            margin-bottom: 30px;
-            padding-right: 20px;
+            margin-bottom: 25px;
+            padding-right: 15px;
             border-right: 5px solid #b87c4f;
         }
 
         .section-title span {
             background: #b87c4f;
             color: white;
-            padding: 5px 15px;
+            padding: 3px 12px;
             border-radius: 50px;
-            font-size: 16px;
-            margin-right: 15px;
+            font-size: 14px;
+            margin-right: 12px;
         }
 
         .items-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 25px;
+            gap: 20px;
         }
 
         .menu-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
             transition: 0.3s;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
+            padding: 12px 18px;
+            border: 1px solid #f0e2d4;
         }
 
         .menu-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-        }
-
-        .menu-card-info {
-            flex: 1;
+            box-shadow: 0 10px 22px rgba(0,0,0,0.1);
+            border-color: #e0a87c;
         }
 
         .menu-card-info h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
+            font-size: 17px;
+            margin-bottom: 3px;
             color: #2c1d12;
         }
 
         .menu-card-info p {
             color: #7e6957;
-            font-size: 13px;
+            font-size: 12px;
         }
 
         .menu-price {
             color: #b87c4f;
             font-weight: bold;
-            font-size: 20px;
-            margin-left: 15px;
+            font-size: 18px;
+            margin-left: 12px;
             white-space: nowrap;
         }
 
         .back-home {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 25px;
+            right: 25px;
             background: #b87c4f;
             color: white;
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            font-size: 22px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
             transition: 0.3s;
             z-index: 1000;
             text-decoration: none;
         }
 
         .back-home:hover {
-            transform: scale(1.1);
+            transform: scale(1.08);
             background: #9b623b;
         }
 
@@ -237,32 +224,17 @@
             background: #1f160f;
             color: #e4cfbc;
             text-align: center;
-            padding: 30px;
-            margin-top: 40px;
+            padding: 25px;
+            margin-top: 35px;
         }
 
         @media (max-width: 768px) {
-            .menu-header h1 {
-                font-size: 32px;
-            }
-            .section-title {
-                font-size: 24px;
-            }
-            .items-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            .categories-bar {
-                top: 60px;
-                gap: 8px;
-            }
-            .category-link {
-                padding: 5px 12px;
-                font-size: 12px;
-            }
-            .menu-icon {
-                display: block;
-            }
+            .menu-header h1 { font-size: 28px; }
+            .section-title { font-size: 22px; }
+            .items-grid { grid-template-columns: 1fr; gap: 12px; }
+            .categories-bar { top: 60px; gap: 6px; }
+            .category-link { padding: 4px 12px; font-size: 11px; }
+            .menu-icon { display: block; }
             .nav-links {
                 position: fixed;
                 top: 70px;
@@ -271,35 +243,26 @@
                 background: white;
                 width: 70%;
                 height: 100vh;
-                padding: 40px;
+                padding: 35px;
                 transition: 0.3s;
                 box-shadow: -5px 0 20px rgba(0,0,0,0.1);
             }
-            .nav-links.active {
-                right: 0;
-            }
-            .menu-card {
-                padding: 12px 15px;
-            }
-            .menu-price {
-                font-size: 16px;
-            }
+            .nav-links.active { right: 0; }
+            .menu-card { padding: 10px 14px; }
+            .menu-price { font-size: 16px; }
         }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo"><span>☕</span> DOBA CAFE </div>
+        <div class="logo"><span>☕</span> DOBA CAFE</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="#hot-drinks">مشروبات ساخنة</a></li>
-            <li><a href="#milk-shake">ميلك شيك</a></li>
-            <li><a href="#hot-mixed">ساخن متنوع</a></li>
-            <li><a href="#juice-smoothie">عصائر وسموذي</a></li>
-            <li><a href="#yogurt">زبادي</a></li>
-            <li><a href="#ice-coffee">أيس كريم & قهوة باردة</a></li>
-            <li><a href="#waffle">وافل</a></li>
+            <li><a href="#coffee">قهوة</a></li>
+            <li><a href="#cold">مشروبات باردة</a></li>
+            <li><a href="#dessert">حلويات</a></li>
+            <li><a href="#bakery">مخبوزات</a></li>
         </ul>
         <div class="menu-icon" id="menuIcon">
             <i class="fas fa-bars"></i>
@@ -307,7 +270,8 @@
     </nav>
 
     <div class="menu-header">
-        <h1>📋 المنيو الكامل</h1>
+        <h1>📋 قائمة الطعام - DOBA CAFE</h1>
+        <p>نتمنى لكم يوماً مميزاً بطعم المنتج</p>
     </div>
 
     <div class="menu-stats">
@@ -315,55 +279,96 @@
     </div>
 
     <div class="categories-bar">
-        <a href="#hot-drinks" class="category-link">☕ مشروبات ساخنة</a>
-        <a href="#milk-shake" class="category-link">🥛 ميلك شيك</a>
-        <a href="#hot-mixed" class="category-link">🔥 ساخن متنوع</a>
-        <a href="#juice-smoothie" class="category-link">🧃 عصائر وسموذي</a>
-        <a href="#yogurt" class="category-link">🥤 زبادي</a>
-        <a href="#ice-coffee" class="category-link">🍦 أيس كريم & قهوة باردة</a>
+        <a href="#soda" class="category-link">🥤 مشروبات غازية</a>
+        <a href="#coffee" class="category-link">☕ قهوة</a>
+        <a href="#espresso" class="category-link">🇮🇹 إسبريسو</a>
+        <a href="#tea" class="category-link">🍵 شاي وأعشاب</a>
+        <a href="#cold" class="category-link">🧊 مشروبات باردة</a>
+        <a href="#juice" class="category-link">🧃 عصائر</a>
+        <a href="#milkshake" class="category-link">🥛 ميلك شيك</a>
         <a href="#waffle" class="category-link">🧇 وافل</a>
+        <a href="#dessert" class="category-link">🍰 حلويات</a>
+        <a href="#yogurt" class="category-link">🥤 زبادي</a>
+        <a href="#bakery" class="category-link">🥐 مخبوزات</a>
+        <a href="#additions" class="category-link">➕ إضافات</a>
     </div>
 
-    <!-- 1- Hot Drinks (مشروبات ساخنة) -->
-    <section id="hot-drinks" class="menu-section">
-        <h2 class="section-title">☕ مشروبات ساخنة <span>25 صنف</span></h2>
-        <div class="items-grid" id="hot-drinks-grid"></div>
+    <!-- 1- مشروبات غازية -->
+    <section id="soda" class="menu-section">
+        <h2 class="section-title">🥤 مشروبات غازية <span>10 أصناف</span></h2>
+        <div class="items-grid" id="soda-grid"></div>
     </section>
 
-    <!-- 2- Milk Shake (ميلك شيك) -->
-    <section id="milk-shake" class="menu-section">
-        <h2 class="section-title">🥛 ميلك شيك <span>11 صنف</span></h2>
-        <div class="items-grid" id="milk-shake-grid"></div>
+    <!-- 2- قهوة -->
+    <section id="coffee" class="menu-section">
+        <h2 class="section-title">☕ قهوة <span>15 صنف</span></h2>
+        <div class="items-grid" id="coffee-grid"></div>
     </section>
 
-    <!-- 3- Hot Mixed (ساخن متنوع) -->
-    <section id="hot-mixed" class="menu-section">
-        <h2 class="section-title">🔥 مشروبات ساخنة متنوعة <span>20 صنف</span></h2>
-        <div class="items-grid" id="hot-mixed-grid"></div>
+    <!-- 3- إسبريسو وإيطالي -->
+    <section id="espresso" class="menu-section">
+        <h2 class="section-title">🇮🇹 إسبريسو ومشروبات إيطالية <span>14 صنف</span></h2>
+        <div class="items-grid" id="espresso-grid"></div>
     </section>
 
-    <!-- 4- Juice & Smoothie (عصائر وسموذي) -->
-    <section id="juice-smoothie" class="menu-section">
-        <h2 class="section-title">🧃 عصائر وسموذي <span>20 صنف</span></h2>
-        <div class="items-grid" id="juice-smoothie-grid"></div>
+    <!-- 4- نسكافيه -->
+    <section id="nescafe" class="menu-section">
+        <h2 class="section-title">☕ نسكافيه <span>8 أصناف</span></h2>
+        <div class="items-grid" id="nescafe-grid"></div>
     </section>
 
-    <!-- 5- Yogurt (زبادي) -->
+    <!-- 5- شاي وأعشاب -->
+    <section id="tea" class="menu-section">
+        <h2 class="section-title">🍵 شاي وأعشاب <span>16 صنف</span></h2>
+        <div class="items-grid" id="tea-grid"></div>
+    </section>
+
+    <!-- 6- مشروبات باردة (فرابيه - موكتيل - ايس كوفي) -->
+    <section id="cold" class="menu-section">
+        <h2 class="section-title">🧊 مشروبات باردة <span>25 صنف</span></h2>
+        <div class="items-grid" id="cold-grid"></div>
+    </section>
+
+    <!-- 7- عصائر -->
+    <section id="juice" class="menu-section">
+        <h2 class="section-title">🧃 عصائر طبيعية <span>14 صنف</span></h2>
+        <div class="items-grid" id="juice-grid"></div>
+    </section>
+
+    <!-- 8- ميلك شيك -->
+    <section id="milkshake" class="menu-section">
+        <h2 class="section-title">🥛 ميلك شيك <span>18 صنف</span></h2>
+        <div class="items-grid" id="milkshake-grid"></div>
+    </section>
+
+    <!-- 9- وافل -->
+    <section id="waffle" class="menu-section">
+        <h2 class="section-title">🧇 وافل <span>9 أصناف</span></h2>
+        <div class="items-grid" id="waffle-grid"></div>
+    </section>
+
+    <!-- 10- حلويات -->
+    <section id="dessert" class="menu-section">
+        <h2 class="section-title">🍰 حلويات <span>14 صنف</span></h2>
+        <div class="items-grid" id="dessert-grid"></div>
+    </section>
+
+    <!-- 11- زبادي -->
     <section id="yogurt" class="menu-section">
-        <h2 class="section-title">🥤 زبادي <span>7 صنف</span></h2>
+        <h2 class="section-title">🥤 زبادي <span>4 أصناف</span></h2>
         <div class="items-grid" id="yogurt-grid"></div>
     </section>
 
-    <!-- 6- Ice Cream & Cold Coffee -->
-    <section id="ice-coffee" class="menu-section">
-        <h2 class="section-title">🍦 أيس كريم & قهوة باردة <span>12 صنف</span></h2>
-        <div class="items-grid" id="ice-coffee-grid"></div>
+    <!-- 12- مخبوزات -->
+    <section id="bakery" class="menu-section">
+        <h2 class="section-title">🥐 مخبوزات وآيس كريم <span>10 أصناف</span></h2>
+        <div class="items-grid" id="bakery-grid"></div>
     </section>
 
-    <!-- 7- Waffle (وافل) -->
-    <section id="waffle" class="menu-section">
-        <h2 class="section-title">🧇 وافل <span>7 صنف</span></h2>
-        <div class="items-grid" id="waffle-grid"></div>
+    <!-- 13- إضافات -->
+    <section id="additions" class="menu-section">
+        <h2 class="section-title">➕ إضافات <span>9 أصناف</span></h2>
+        <div class="items-grid" id="additions-grid"></div>
     </section>
 
     <a href="index.html" class="back-home">
@@ -371,16 +376,11 @@
     </a>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/doba_kids?igsh=Nm42NDZuZm5lMzNp&utm_source=qr"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.tiktok.com/@doba_kids?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
-        </div>
         <p>&copy; 2026 DOBA CAFE | دوبا كافـيـه</p>
+        <p>نتمنى لكم يوماً مميزاً</p>
     </footer>
 
     <script>
-        // Menu Icon
         const menuIcon = document.getElementById('menuIcon');
         const navLinks = document.getElementById('navLinks');
         if (menuIcon) {
@@ -389,142 +389,144 @@
             });
         }
 
+        // ============= البيانات من الصور =============
 
-
-        // 1- Hot Drinks (مشروبات ساخنة) - 25 صنف
-        const hotDrinks = [
-            { name: "قهوة تركية (S)", price: 25 },
-            { name: "قهوة تركية (D)", price: 40 },
-            { name: "إسبريسو (S)", price: 35 },
-            { name: "إسبريسو (D)", price: 50 },
-            { name: "أضراركاون", price: 40 },
-            { name: "لونجو", price: 40 },
-            { name: "ريستريتو", price: 40 },
-            { name: "أفوجاتو", price: 50 },
-            { name: "إسبريسو شوكلت", price: 50 },
-            { name: "قهوة فرنساوي", price: 40 },
-            { name: "قهوة بندق", price: 40 },
-            { name: "نسكافيه بالك", price: 25 },
-            { name: "كوفي ميكس", price: 25 },
-            { name: "نسكافيه حليب", price: 50 },
-            { name: "كابتشينو كلاسيك", price: 50 },
-            { name: "كابتشينو فليفر", price: 60 },
-            { name: "موكا دارك", price: 60 },
-            { name: "موكا وايست", price: 60 },
-            { name: "لاتيه", price: 60 },
-            { name: "لاتيه فليفر", price: 50 },
-            { name: "كورتادو", price: 60 },
-            { name: "فلات وايست", price: 50 },
-            { name: "ميلك", price: 50 }
+        // 1- مشروبات غازية
+        const soda = [
+            { name: "بيبسي", price: 25 }, { name: "كولا", price: 25 },
+            { name: "فيروز", price: 35 }, { name: "سفن أب", price: 25 },
+            { name: "ميرندا", price: 25 }, { name: "تويسنت", price: 20 },
+            { name: "ستينغ", price: 20 }, { name: "بريل", price: 35 },
+            { name: "ريد بول", price: 100 }, { name: "مياه صغيرة", price: 10 }
         ];
 
-        // 2- Milk Shake (ميلك شيك) - 11 صنف
-        const milkShakes = [
-            { name: "ميلك شيك شوكولاتة", price: 70 },
-            { name: "ميلك شيك فانيليا", price: 70 },
-            { name: "ميلك شيك مانجو", price: 70 },
-            { name: "ميلك شيك فراولة", price: 75 },
-            { name: "ميلك شيك بلوبيري", price: 75 },
-            { name: "ميلك شيك كراميل", price: 80 },
-            { name: "ميلك شيك أوريو", price: 80 },
-            { name: "ميلك شيك باشون فروت", price: 80 },
-            { name: "ميلك شيك نوتيلا", price: 80 },
-            { name: "ميلك شيك لوتس", price: 80 },
-            { name: "ميلك شيك كوفي", price: 80 }
+        // 2- قهوة
+        const coffee = [
+            { name: "قهوة تركية", price: 25 }, { name: "قهوة بندق", price: 30 },
+            { name: "قهوة فرنساوي", price: 30 }, { name: "قهوة نوتيلا", price: 40 },
+            { name: "قهوة لوتس", price: 40 }, { name: "قهوة فستق", price: 40 },
+            { name: "هوت سايدر", price: 35 }, { name: "هوت شوكلت", price: 35 },
+            { name: "هوت ماونتن ووتر", price: 35 }, { name: "شوكولاتييه", price: 40 },
+            { name: "هوت لوتس", price: 45 }, { name: "هوت نوتيلا", price: 45 },
+            { name: "هوت أوريو", price: 45 }, { name: "حليب بالقرفة", price: 25 },
+            { name: "شاي بالحليب", price: 25 }
         ];
 
-        // 3- Hot Mixed (ساخن متنوع) - 20 صنف
-        const hotMixed = [
-            { name: "شاي عربي", price: 15 },
-            { name: "شاي بالبيت", price: 20 },
-            { name: "شاي أخضر", price: 20 },
-            { name: "شاي حليب", price: 25 },
-            { name: "ينسون", price: 20 },
-            { name: "نعناع", price: 20 },
-            { name: "كركديه", price: 20 },
-            { name: "قرفة", price: 20 },
-            { name: "جنزيل", price: 20 },
-            { name: "كوكتيل أعشاب", price: 40 },
-            { name: "هوت شوكلت", price: 50 },
-            { name: "هوت نوتيلا", price: 60 },
-            { name: "هوت لوتس", price: 60 },
-            { name: "هوت أوريو", price: 60 },
-            { name: "هوت بوريو", price: 60 },
-            { name: "سحلب مكسرات", price: 50 },
-            { name: "سحلب فواكه", price: 70 },
-            { name: "سحلب نوتيلا", price: 70 },
-            { name: "سحلب لوتس", price: 70 },
-            { name: "اسبانيش لاتيه", price: 65 }
+        // 3- إسبريسو وإيطالي
+        const espresso = [
+            { name: "إسبريسو فردي", price: 25 }, { name: "إسبريسو مزدوج", price: 35 },
+            { name: "إسبريسو أفوكادو", price: 40 }, { name: "أمريكانو", price: 30 },
+            { name: "لاتيه", price: 40 }, { name: "لاتيه فليفر", price: 45 },
+            { name: "كابتشينو", price: 40 }, { name: "كابتشينو فليفر", price: 45 },
+            { name: "موكا", price: 45 }, { name: "موكا دارك", price: 45 },
+            { name: "كورتادو", price: 40 }, { name: "فلات وايت", price: 40 },
+            { name: "ماتشياتو", price: 40 }
         ];
 
-        // 4- Juice & Smoothie (عصائر وسموذي) - 20 صنف
-        const juiceSmoothie = [
-            { name: "سموزي فراولة", price: 60 },
-            { name: "سموزي مانجو", price: 65 },
-            { name: "سموزي بطيخ", price: 60 },
-            { name: "سموزي ليمون نعناع", price: 50 },
-            { name: "سموزي خوخ", price: 65 },
-            { name: "سموزي أناناس", price: 65 },
-            { name: "سموزي كيوي", price: 80 },
-            { name: "سموزي بلوبيري", price: 60 },
-            { name: "سموزي ميكس بيري", price: 65 },
-            { name: "كوكتيل", price: 60 },
-            { name: "كوكتيل قطع", price: 60 },
-            { name: "طبقات", price: 60 },
-            { name: "قطع آيس", price: 75 },
-            { name: "بيرو", price: 90 },
-            { name: "كوكتيل دوما", price: 100 },
-            { name: "عصير فراولة", price: 45 },
-            { name: "عصير مانجو", price: 50 },
-            { name: "عصير بطيخ", price: 45 },
-            { name: "عصير كيوي", price: 70 },
-            { name: "عصير كتالوب", price: 90 }
+        // 4- نسكافيه
+        const nescafe = [
+            { name: "نسكافيه سادة", price: 20 }, { name: "نسكافيه بالحليب", price: 30 },
+            { name: "نسكافيه فليفر (كراميل)", price: 35 }, { name: "نسكافيه فليفر (بندق)", price: 35 },
+            { name: "نسكافيه فليفر (فانيليا)", price: 35 }, { name: "نسكافيه كوكيز", price: 35 },
+            { name: "نسكافيه شوكولاتة", price: 35 }
         ];
 
-        // 5- Yogurt (زبادي) - 7 صنف
-        const yogurts = [
-            { name: "زبادي عسل", price: 50 },
-            { name: "زبادي فراولة", price: 60 },
-            { name: "زبادي مانجو", price: 65 },
-            { name: "زبادي فواكه", price: 75 },
-            { name: "زبادي خوخ", price: 65 },
-            { name: "زبادي توت", price: 80 },
-            { name: "زبادي كيوي", price: 80 }
+        // 5- شاي وأعشاب
+        const tea = [
+            { name: "شاي عربي", price: 15 }, { name: "شاي أكياس", price: 15 },
+            { name: "شاي أخضر", price: 18 }, { name: "شاي فليفر", price: 20 },
+            { name: "شاي كرك", price: 25 }, { name: "ينسون", price: 15 },
+            { name: "قرفة", price: 15 }, { name: "جنزبيل", price: 15 },
+            { name: "نعناع", price: 15 }, { name: "ليمون", price: 15 },
+            { name: "كركديه", price: 15 }, { name: "أعشاب مشكلة", price: 20 }
         ];
 
-        // 6- Ice Cream & Cold Coffee - 12 صنف
-        const iceCoffee = [
-            { name: "أيس كريم سادة", price: 15 },
-            { name: "أيس كريم شوكولاتة", price: 30 },
-            { name: "أيس كريم فراولة", price: 45 },
-            { name: "أيس كريم مانجو", price: 60 },
-            { name: "أيس كريم فانيليا", price: 75 },
-            { name: "أيس كريم ميكس", price: 80 },
-            { name: "كوفي باردة", price: 45 },
-            { name: "لاتيه باردة", price: 60 },
-            { name: "موكا باردة", price: 75 },
-            { name: "كراميل لاتيه باردة", price: 80 },
-            { name: "أيس سبانش لاتيه", price: 80 },
-            { name: "فرابتشينو", price: 80 }
+        // 6- مشروبات باردة
+        const cold = [
+            { name: "موكا فرابيه", price: 50 }, { name: "نوتيلا فرابيه", price: 55 },
+            { name: "فستق فرابيه", price: 55 }, { name: "لاتيه فرابيه", price: 50 },
+            { name: "موجيتو", price: 40 }, { name: "موجيتو فليفر", price: 45 },
+            { name: "سانشاين", price: 45 }, { name: "سانرايز", price: 45 },
+            { name: "شيري كولا", price: 40 }, { name: "بينا كولادا", price: 50 },
+            { name: "بلوبيري", price: 45 }, { name: "بلوباج", price: 45 },
+            { name: "هيد هامر", price: 50 }, { name: "ايس كوفي", price: 40 },
+            { name: "ايس لاتيه", price: 45 }, { name: "ايس سبانش لاتيه", price: 50 },
+            { name: "ايس موكا", price: 45 }, { name: "ايس امريكانو", price: 35 },
+            { name: "ايس كراميل", price: 45 }, { name: "ايس ماتشياتو", price: 45 },
+            { name: "فرابتشينو قهوة", price: 55 }, { name: "فرابتشينو لوتس", price: 60 },
+            { name: "فرابتشينو موكا", price: 55 }, { name: "فرابتشينو كراميل", price: 55 }
         ];
 
-        // 7- Waffle (وافل) - 7 صنف
-        const waffles = [
-            { name: "وافل كلاسيك", price: 80 },
-            { name: "وافل شوكولاتة", price: 75 },
-            { name: "وافل فراولة", price: 90 },
-            { name: "وافل مانجو", price: 105 },
-            { name: "وافل نوتيلا", price: 110 },
-            { name: "وافل لوتس", price: 115 },
-            { name: "وافل أوريو", price: 125 }
+        // 7- عصائر
+        const juice = [
+            { name: "مانجو", price: 40 }, { name: "فراولة", price: 40 },
+            { name: "برتقال", price: 30 }, { name: "كيوي", price: 50 },
+            { name: "بطيخ", price: 30 }, { name: "كنتالوب", price: 40 },
+            { name: "أفوكادو", price: 60 }, { name: "تمر بالحليب", price: 45 },
+            { name: "موز", price: 35 }, { name: "ليمون", price: 25 },
+            { name: "ليمون نعناع", price: 30 }, { name: "عصير مشكل", price: 50 },
+            { name: "عصير فراولة بالحليب", price: 45 }, { name: "عصير مانجو بالحليب", price: 50 }
+        ];
+
+        // 8- ميلك شيك
+        const milkshake = [
+            { name: "فانيليا", price: 50 }, { name: "شوكولاتة", price: 50 },
+            { name: "مانجو", price: 50 }, { name: "فراولة", price: 50 },
+            { name: "كراميل", price: 55 }, { name: "نوتيلا", price: 60 },
+            { name: "لوتس", price: 60 }, { name: "أوريو", price: 60 },
+            { name: "كيت كات", price: 60 }, { name: "سنيكرز", price: 60 },
+            { name: "هوهوز", price: 60 }, { name: "فستق", price: 60 },
+            { name: "توينكس", price: 60 }, { name: "زايدر", price: 60 }
+        ];
+
+        // 9- وافل
+        const waffle = [
+            { name: "نوتيلا", price: 65 }, { name: "لوتس", price: 70 },
+            { name: "شوكولاتة بيضاء", price: 60 }, { name: "شوكولاتة داكنة", price: 60 },
+            { name: "كيندر", price: 90 }, { name: "أوريو", price: 70 },
+            { name: "فستق", price: 80 }, { name: "فواكه", price: 80 },
+            { name: "آيس كريم", price: 85 }
+        ];
+
+        // 10- حلويات
+        const dessert = [
+            { name: "تشيز كيك", price: 80 }, { name: "كيك شوكولاتة", price: 80 },
+            { name: "ديسبيكادو", price: 100 }, { name: "مولتن كيك", price: 95 },
+            { name: "ريد فيلفت", price: 80 }, { name: "تيراميسو", price: 80 },
+            { name: "سلطة فواكه", price: 65 }, { name: "سلطة فواكه آيس كريم", price: 80 },
+            { name: "كريمة مغرفة", price: 80 }, { name: "سلطة فواكه آيس كريم 2 مغرفة", price: 85 },
+            { name: "كريمة 2 مغرفة", price: 90 }, { name: "سلطة فواكه آيس كريم 3 مغارف", price: 95 },
+            { name: "كريمة 3 مغارف", price: 95 }, { name: "سلطة فواكه ميكس", price: 95 }
+        ];
+
+        // 11- زبادي
+        const yogurt = [
+            { name: "زبادي كلاسيك", price: 60 }, { name: "زبادي فواكه", price: 75 },
+            { name: "زبادي أفوكادو", price: 100 }, { name: "زبادي زاهر", price: 120 }
+        ];
+
+        // 12- مخبوزات وآيس كريم
+        const bakery = [
+            { name: "كونو آيس كريم سوفت", price: 25 }, { name: "طبق آيس كريم", price: 40 },
+            { name: "آيس كريم سوفت - أخذ بعيد صغير", price: 35 }, { name: "آيس كريم سوفت - أخذ بعيد كبير", price: 50 },
+            { name: "آيس كريم فواكه (هارد)", price: 45 }, { name: "آيس كريم مكسرات (هارد)", price: 50 },
+            { name: "كرواسون سادة", price: 55 }, { name: "كرواسون جبنة", price: 65 }
+        ];
+
+        // 13- إضافات
+        const additions = [
+            { name: "صوص", price: 15 }, { name: "مكسرات", price: 20 },
+            { name: "عسل", price: 20 }, { name: "حليب", price: 20 },
+            { name: "آيس كريم", price: 30 }, { name: "فواكه", price: 20 },
+            { name: "سيرب", price: 10 }, { name: "ثلج", price: 10 }
         ];
 
         // حساب المجموع الكلي
-        const totalItems = hotDrinks.length + milkShakes.length + hotMixed.length + 
-                          juiceSmoothie.length + yogurts.length + iceCoffee.length + waffles.length;
+        const totalItems = soda.length + coffee.length + espresso.length + nescafe.length + 
+                          tea.length + cold.length + juice.length + milkshake.length + 
+                          waffle.length + dessert.length + yogurt.length + bakery.length + additions.length;
         document.getElementById('totalItems').innerText = totalItems;
 
-        // دالة لعرض المنتجات
         function renderItems(containerId, items) {
             const container = document.getElementById(containerId);
             if (!container) return;
@@ -538,14 +540,19 @@
             `).join('');
         }
 
-        // عرض كل الأقسام
-        renderItems('hot-drinks-grid', hotDrinks);
-        renderItems('milk-shake-grid', milkShakes);
-        renderItems('hot-mixed-grid', hotMixed);
-        renderItems('juice-smoothie-grid', juiceSmoothie);
-        renderItems('yogurt-grid', yogurts);
-        renderItems('ice-coffee-grid', iceCoffee);
-        renderItems('waffle-grid', waffles);
+        renderItems('soda-grid', soda);
+        renderItems('coffee-grid', coffee);
+        renderItems('espresso-grid', espresso);
+        renderItems('nescafe-grid', nescafe);
+        renderItems('tea-grid', tea);
+        renderItems('cold-grid', cold);
+        renderItems('juice-grid', juice);
+        renderItems('milkshake-grid', milkshake);
+        renderItems('waffle-grid', waffle);
+        renderItems('dessert-grid', dessert);
+        renderItems('yogurt-grid', yogurt);
+        renderItems('bakery-grid', bakery);
+        renderItems('additions-grid', additions);
     </script>
 </body>
 </html>
