@@ -1,4 +1,4 @@
-/* style.css — تصميم DOBA CAFE غامق وأنيق */
+/* style.css — DOBA CAFE بألوان أفتح وأنيقة */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +6,9 @@
 }
 
 body {
-  background: #0c0a0a;
+  background: #1a1612;  /* بني غامق لكن أفتح من قبل */
   font-family: 'Cairo', sans-serif;
-  color: #f0e7db;
+  color: #f5ede3;
   padding: 20px 16px 40px;
   min-height: 100vh;
   position: relative;
@@ -16,35 +16,35 @@ body {
   direction: rtl;
 }
 
-/* عناصر الخلفية */
+/* رسومات الخلفية - ثابتة طول الوقت */
 .bg {
   position: fixed;
-  opacity: 0.05;
   pointer-events: none;
   z-index: 0;
-  filter: brightness(0.8);
+  opacity: 0.08;
+  filter: brightness(1.2);
 }
 
 .cup {
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 30px;
   width: 300px;
   transform: rotate(-12deg);
 }
 
 .beans {
-  top: 30px;
-  right: 30px;
-  width: 260px;
-  opacity: 0.06;
+  top: 40px;
+  right: 40px;
+  width: 280px;
+  transform: rotate(5deg);
 }
 
 .smoke {
-  bottom: 60px;
-  right: 60px;
-  width: 380px;
-  opacity: 0.04;
+  bottom: 80px;
+  right: 80px;
+  width: 400px;
   transform: scaleX(-1);
+  opacity: 0.06;
 }
 
 .container {
@@ -54,7 +54,7 @@ body {
   z-index: 5;
 }
 
-/* العنوان */
+/* العنوان الرئيسي */
 .title {
   text-align: center;
   margin-bottom: 48px;
@@ -65,17 +65,17 @@ body {
   font-size: 1.9rem;
   letter-spacing: 12px;
   font-weight: 300;
-  color: #c7aa8b;
+  color: #d4b99a;
   text-transform: uppercase;
 }
 
 .title h1 {
   font-size: 4rem;
   font-weight: 700;
-  color: #e5d5c0;
-  text-shadow: 0 0 12px rgba(190, 150, 100, 0.4);
+  color: #efe0d0;
+  text-shadow: 0 0 15px rgba(200, 160, 120, 0.3);
   margin-top: -10px;
-  border-bottom: 2px solid #6a5340;
+  border-bottom: 2px solid #8b735a;
   display: inline-block;
   padding: 0 30px 18px;
   letter-spacing: 6px;
@@ -90,12 +90,12 @@ body {
 }
 
 .menu-col {
-  background: rgba(16, 12, 10, 0.7);
+  background: rgba(45, 35, 28, 0.75);  /* أفتح من قبل */
   backdrop-filter: blur(4px);
   padding: 26px 20px;
   border-radius: 36px;
-  border: 1px solid #4a3c2e;
-  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.8);
+  border: 1px solid #6b5743;
+  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5);
   transition: all 0.2s;
 }
 
@@ -103,8 +103,8 @@ body {
 .section-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #dac2a8;
-  border-right: 6px solid #a5835e;
+  color: #e8d4be;
+  border-right: 6px solid #b8956e;
   padding-right: 20px;
   margin-bottom: 18px;
   letter-spacing: 1px;
@@ -113,9 +113,9 @@ body {
 .sub-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #c1aa92;
+  color: #d4bb9f;
   margin: 20px 0 12px 0;
-  border-bottom: 1px dashed #5e4e3b;
+  border-bottom: 1px dashed #7a6550;
   padding-bottom: 6px;
 }
 
@@ -125,10 +125,10 @@ body {
   justify-content: space-between;
   align-items: baseline;
   padding: 9px 6px;
-  border-bottom: 1px dotted #4f3f2e;
+  border-bottom: 1px dotted #6b5a48;
   font-size: 1.25rem;
   font-weight: 400;
-  color: #f2e3d2;
+  color: #f8ede0;
 }
 
 .item span:first-child {
@@ -137,18 +137,18 @@ body {
 
 .item span:last-child {
   font-weight: 700;
-  color: #dbbc9b;
-  background: #1f1813;
+  color: #e6c8a8;
+  background: #2f261e;
   padding: 2px 14px;
   border-radius: 40px;
   font-size: 1.2rem;
-  border: 1px solid #6e5b47;
+  border: 1px solid #9a8167;
 }
 
 .flavor-note span:first-child {
   font-size: 1.1rem;
   font-weight: 300;
-  color: #bfa58b;
+  color: #cdb59e;
   padding-right: 20px;
 }
 
@@ -160,10 +160,10 @@ body {
 .footer-note {
   margin-top: 50px;
   text-align: center;
-  color: #9e8b78;
+  color: #b8a088;
   font-size: 1.1rem;
   letter-spacing: 2px;
-  border-top: 1px solid #3f3123;
+  border-top: 1px solid #5f4d39;
   padding-top: 28px;
 }
 
