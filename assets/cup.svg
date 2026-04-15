@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="#b8a07c">
+  <path d="M60 70 L70 150 L130 150 L140 70 Z" opacity="0.7"/>
+  <path d="M75 50 L125 50 L130 70 L70 70 Z" opacity="0.5"/>
+  <ellipse cx="100" cy="50" rx="25" ry="8" opacity="0.6"/>
+  <path d="M135 80 Q155 85 150 110 Q145 130 130 125" fill="none" stroke="#b8a07c" stroke-width="6" opacity="0.5"/>
+  <!-- بخار بسيط -->
+  <path d="M90 40 Q85 25 95 15" fill="none" stroke="#a58e71" stroke-width="3" opacity="0.3"/>
+  <path d="M105 35 Q110 15 100 5" fill="none" stroke="#a58e71" stroke-width="3" opacity="0.25"/>
+</svg>
