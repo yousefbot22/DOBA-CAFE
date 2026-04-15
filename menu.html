@@ -15,8 +15,19 @@
 
         body {
             font-family: 'Cairo', sans-serif;
-            background: #fefaf5;
-            color: #2c2420;
+            background: #f5f7f5;
+            color: #1a2a3a;
+        }
+
+        /* اللون الجديد: أخضر زيتي داكن */
+        :root {
+            --primary: #2c553c;
+            --primary-dark: #1e3d2c;
+            --primary-light: #4a7c5e;
+            --bg-light: #f0f4f0;
+            --text-dark: #1a2a3a;
+            --text-light: #5a6e6a;
+            --border-color: #d4e0d4;
         }
 
         .navbar {
@@ -24,21 +35,28 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 5%;
-            background: rgba(255, 251, 245, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(8px);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid #f0e2d4;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .logo {
             font-size: 28px;
             font-weight: 800;
-            background: linear-gradient(135deg, #b87c4f, #e0a87c);
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+        }
+
+        .logo span {
+            font-size: 32px;
+            color: var(--primary);
+            background: none;
         }
 
         .nav-links {
@@ -50,12 +68,12 @@
         .nav-links a {
             text-decoration: none;
             font-weight: 600;
-            color: #3e2c21;
+            color: var(--text-dark);
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: #b87c4f;
+            color: var(--primary);
         }
 
         .menu-icon {
@@ -64,19 +82,8 @@
             cursor: pointer;
         }
 
-        .btn {
-            display: inline-block;
-            background: #b87c4f;
-            color: white;
-            padding: 12px 32px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: 0.3s;
-        }
-
         .menu-header {
-            background: linear-gradient(135deg, #b87c4f, #e0a87c);
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
             color: white;
             padding: 50px 20px;
             text-align: center;
@@ -89,7 +96,7 @@
 
         .menu-stats {
             text-align: center;
-            background: #fef8f2;
+            background: var(--bg-light);
             padding: 12px;
             margin: 15px 5%;
             border-radius: 50px;
@@ -97,7 +104,7 @@
 
         .menu-stats span {
             font-weight: bold;
-            color: #b87c4f;
+            color: var(--primary);
             font-size: 22px;
         }
 
@@ -115,8 +122,8 @@
         }
 
         .category-link {
-            background: #f0e2d4;
-            color: #b87c4f;
+            background: var(--bg-light);
+            color: var(--primary);
             padding: 6px 18px;
             border-radius: 50px;
             text-decoration: none;
@@ -126,7 +133,7 @@
         }
 
         .category-link:hover {
-            background: #b87c4f;
+            background: var(--primary);
             color: white;
         }
 
@@ -137,14 +144,14 @@
         .section-title {
             font-size: 28px;
             font-weight: 800;
-            color: #2c1d12;
+            color: var(--text-dark);
             margin-bottom: 25px;
             padding-right: 15px;
-            border-right: 5px solid #b87c4f;
+            border-right: 5px solid var(--primary);
         }
 
         .section-title span {
-            background: #b87c4f;
+            background: var(--primary);
             color: white;
             padding: 3px 12px;
             border-radius: 50px;
@@ -152,47 +159,42 @@
             margin-right: 12px;
         }
 
+        /* تصميم الصندوقين زي ما انت عايز - اسم على يمين وسعر على شمال */
         .items-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .menu-card {
             background: white;
-            border-radius: 18px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-            transition: 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: 0.2s;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 18px;
-            border: 1px solid #f0e2d4;
+            padding: 14px 20px;
+            border: 1px solid var(--border-color);
         }
 
         .menu-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 22px rgba(0,0,0,0.1);
-            border-color: #e0a87c;
+            transform: translateX(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            border-color: var(--primary-light);
         }
 
         .menu-card-info h3 {
             font-size: 17px;
-            margin-bottom: 3px;
-            color: #2c1d12;
-        }
-
-        .menu-card-info p {
-            color: #7e6957;
-            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-dark);
         }
 
         .menu-price {
-            color: #b87c4f;
+            color: var(--primary);
             font-weight: bold;
             font-size: 18px;
-            margin-left: 12px;
             white-space: nowrap;
         }
 
@@ -200,7 +202,7 @@
             position: fixed;
             bottom: 25px;
             right: 25px;
-            background: #b87c4f;
+            background: var(--primary);
             color: white;
             width: 50px;
             height: 50px;
@@ -217,12 +219,12 @@
 
         .back-home:hover {
             transform: scale(1.08);
-            background: #9b623b;
+            background: var(--primary-dark);
         }
 
         footer {
-            background: #1f160f;
-            color: #e4cfbc;
+            background: var(--text-dark);
+            color: var(--bg-light);
             text-align: center;
             padding: 25px;
             margin-top: 35px;
@@ -231,7 +233,6 @@
         @media (max-width: 768px) {
             .menu-header h1 { font-size: 28px; }
             .section-title { font-size: 22px; }
-            .items-grid { grid-template-columns: 1fr; gap: 12px; }
             .categories-bar { top: 60px; gap: 6px; }
             .category-link { padding: 4px 12px; font-size: 11px; }
             .menu-icon { display: block; }
@@ -248,7 +249,8 @@
                 box-shadow: -5px 0 20px rgba(0,0,0,0.1);
             }
             .nav-links.active { right: 0; }
-            .menu-card { padding: 10px 14px; }
+            .menu-card { padding: 12px 16px; }
+            .menu-card-info h3 { font-size: 15px; }
             .menu-price { font-size: 16px; }
         }
     </style>
@@ -259,10 +261,11 @@
         <div class="logo"><span>☕</span> DOBA CAFE</div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="#soda">مشروبات غازية</a></li>
             <li><a href="#coffee">قهوة</a></li>
             <li><a href="#cold">مشروبات باردة</a></li>
+            <li><a href="#juice">عصائر</a></li>
             <li><a href="#dessert">حلويات</a></li>
-            <li><a href="#bakery">مخبوزات</a></li>
         </ul>
         <div class="menu-icon" id="menuIcon">
             <i class="fas fa-bars"></i>
@@ -282,6 +285,7 @@
         <a href="#soda" class="category-link">🥤 مشروبات غازية</a>
         <a href="#coffee" class="category-link">☕ قهوة</a>
         <a href="#espresso" class="category-link">🇮🇹 إسبريسو</a>
+        <a href="#nescafe" class="category-link">☕ نسكافيه</a>
         <a href="#tea" class="category-link">🍵 شاي وأعشاب</a>
         <a href="#cold" class="category-link">🧊 مشروبات باردة</a>
         <a href="#juice" class="category-link">🧃 عصائر</a>
@@ -305,7 +309,7 @@
         <div class="items-grid" id="coffee-grid"></div>
     </section>
 
-    <!-- 3- إسبريسو وإيطالي -->
+    <!-- 3- إسبريسو -->
     <section id="espresso" class="menu-section">
         <h2 class="section-title">🇮🇹 إسبريسو ومشروبات إيطالية <span>14 صنف</span></h2>
         <div class="items-grid" id="espresso-grid"></div>
@@ -323,7 +327,7 @@
         <div class="items-grid" id="tea-grid"></div>
     </section>
 
-    <!-- 6- مشروبات باردة (فرابيه - موكتيل - ايس كوفي) -->
+    <!-- 6- مشروبات باردة -->
     <section id="cold" class="menu-section">
         <h2 class="section-title">🧊 مشروبات باردة <span>25 صنف</span></h2>
         <div class="items-grid" id="cold-grid"></div>
@@ -361,7 +365,7 @@
 
     <!-- 12- مخبوزات -->
     <section id="bakery" class="menu-section">
-        <h2 class="section-title">🥐 مخبوزات وآيس كريم <span>10 أصناف</span></h2>
+        <h2 class="section-title">🥐 مخبوزات وآيس كريم <span>8 أصناف</span></h2>
         <div class="items-grid" id="bakery-grid"></div>
     </section>
 
@@ -389,9 +393,8 @@
             });
         }
 
-        // ============= البيانات من الصور =============
+        // ============= البيانات =============
 
-        // 1- مشروبات غازية
         const soda = [
             { name: "بيبسي", price: 25 }, { name: "كولا", price: 25 },
             { name: "فيروز", price: 35 }, { name: "سفن أب", price: 25 },
@@ -400,7 +403,6 @@
             { name: "ريد بول", price: 100 }, { name: "مياه صغيرة", price: 10 }
         ];
 
-        // 2- قهوة
         const coffee = [
             { name: "قهوة تركية", price: 25 }, { name: "قهوة بندق", price: 30 },
             { name: "قهوة فرنساوي", price: 30 }, { name: "قهوة نوتيلا", price: 40 },
@@ -412,7 +414,6 @@
             { name: "شاي بالحليب", price: 25 }
         ];
 
-        // 3- إسبريسو وإيطالي
         const espresso = [
             { name: "إسبريسو فردي", price: 25 }, { name: "إسبريسو مزدوج", price: 35 },
             { name: "إسبريسو أفوكادو", price: 40 }, { name: "أمريكانو", price: 30 },
@@ -423,7 +424,6 @@
             { name: "ماتشياتو", price: 40 }
         ];
 
-        // 4- نسكافيه
         const nescafe = [
             { name: "نسكافيه سادة", price: 20 }, { name: "نسكافيه بالحليب", price: 30 },
             { name: "نسكافيه فليفر (كراميل)", price: 35 }, { name: "نسكافيه فليفر (بندق)", price: 35 },
@@ -431,7 +431,6 @@
             { name: "نسكافيه شوكولاتة", price: 35 }
         ];
 
-        // 5- شاي وأعشاب
         const tea = [
             { name: "شاي عربي", price: 15 }, { name: "شاي أكياس", price: 15 },
             { name: "شاي أخضر", price: 18 }, { name: "شاي فليفر", price: 20 },
@@ -441,7 +440,6 @@
             { name: "كركديه", price: 15 }, { name: "أعشاب مشكلة", price: 20 }
         ];
 
-        // 6- مشروبات باردة
         const cold = [
             { name: "موكا فرابيه", price: 50 }, { name: "نوتيلا فرابيه", price: 55 },
             { name: "فستق فرابيه", price: 55 }, { name: "لاتيه فرابيه", price: 50 },
@@ -457,7 +455,6 @@
             { name: "فرابتشينو موكا", price: 55 }, { name: "فرابتشينو كراميل", price: 55 }
         ];
 
-        // 7- عصائر
         const juice = [
             { name: "مانجو", price: 40 }, { name: "فراولة", price: 40 },
             { name: "برتقال", price: 30 }, { name: "كيوي", price: 50 },
@@ -468,7 +465,6 @@
             { name: "عصير فراولة بالحليب", price: 45 }, { name: "عصير مانجو بالحليب", price: 50 }
         ];
 
-        // 8- ميلك شيك
         const milkshake = [
             { name: "فانيليا", price: 50 }, { name: "شوكولاتة", price: 50 },
             { name: "مانجو", price: 50 }, { name: "فراولة", price: 50 },
@@ -479,7 +475,6 @@
             { name: "توينكس", price: 60 }, { name: "زايدر", price: 60 }
         ];
 
-        // 9- وافل
         const waffle = [
             { name: "نوتيلا", price: 65 }, { name: "لوتس", price: 70 },
             { name: "شوكولاتة بيضاء", price: 60 }, { name: "شوكولاتة داكنة", price: 60 },
@@ -488,7 +483,6 @@
             { name: "آيس كريم", price: 85 }
         ];
 
-        // 10- حلويات
         const dessert = [
             { name: "تشيز كيك", price: 80 }, { name: "كيك شوكولاتة", price: 80 },
             { name: "ديسبيكادو", price: 100 }, { name: "مولتن كيك", price: 95 },
@@ -499,13 +493,11 @@
             { name: "كريمة 3 مغارف", price: 95 }, { name: "سلطة فواكه ميكس", price: 95 }
         ];
 
-        // 11- زبادي
         const yogurt = [
             { name: "زبادي كلاسيك", price: 60 }, { name: "زبادي فواكه", price: 75 },
             { name: "زبادي أفوكادو", price: 100 }, { name: "زبادي زاهر", price: 120 }
         ];
 
-        // 12- مخبوزات وآيس كريم
         const bakery = [
             { name: "كونو آيس كريم سوفت", price: 25 }, { name: "طبق آيس كريم", price: 40 },
             { name: "آيس كريم سوفت - أخذ بعيد صغير", price: 35 }, { name: "آيس كريم سوفت - أخذ بعيد كبير", price: 50 },
@@ -513,7 +505,6 @@
             { name: "كرواسون سادة", price: 55 }, { name: "كرواسون جبنة", price: 65 }
         ];
 
-        // 13- إضافات
         const additions = [
             { name: "صوص", price: 15 }, { name: "مكسرات", price: 20 },
             { name: "عسل", price: 20 }, { name: "حليب", price: 20 },
@@ -521,7 +512,6 @@
             { name: "سيرب", price: 10 }, { name: "ثلج", price: 10 }
         ];
 
-        // حساب المجموع الكلي
         const totalItems = soda.length + coffee.length + espresso.length + nescafe.length + 
                           tea.length + cold.length + juice.length + milkshake.length + 
                           waffle.length + dessert.length + yogurt.length + bakery.length + additions.length;
